@@ -5,9 +5,9 @@ class CarTest extends Specification {
 
 
     // 1. basic test
-    def "The car can be filled with gas"() {
 
-    }
+
+
 
 
 
@@ -40,15 +40,11 @@ class CarTest extends Specification {
 
 
 
-
     // 3. Mocking
     def "When fuel efficiency logic is different"() {
         given:
         FuelEfficiencyLogic fuelEfficiencyLogic = Mock()
-
         fuelEfficiencyLogic.getRange(_) >> 10
-
-        // fuelEfficiencyLogic.getRange(_) >> {int gas -> gas * 2 }
 
         Car car = new Car(fuelEfficiencyLogic);
 
@@ -61,10 +57,10 @@ class CarTest extends Specification {
     }
 
 
-    // 4. interactions
+    // interactions
     def "Number of requests to fuelEfficiencyLogic incremented after driving"() {
         given:
-        FuelEfficiencyLogic fuelEfficiencyLogic = Spy();
+        FuelEfficiencyLogic fuelEfficiencyLogic = Spy()
         Car car = new Car(fuelEfficiencyLogic)
 
         when:
@@ -76,9 +72,10 @@ class CarTest extends Specification {
         2 * fuelEfficiencyLogic.getRange(_)
 
         with(fuelEfficiencyLogic) {
-            requests == 2
+            rangeRequestsCount == 2
         }
     }
+
 
     // 5. expect
     def "Car reports when it is able to drive the full distance"() {
@@ -123,7 +120,10 @@ class CarTest extends Specification {
         thrown(InternalError)
     }
 
-    // with checks 2 values
+
+
+
+    // 8) with checks 2 values
     @Unroll
     def "check distance and gas remaining with #gas gas and #distance distance"() {
         given:

@@ -4,7 +4,7 @@ import spock.lang.Unroll
 import spockdemo.Car
 import spockdemo.FuelEfficiencyLogic
 
-class CarTestReference extends Specification{
+class CarTestFinal extends Specification{
 
     def "The car can be filled with gas"() {
         given: "a car"
@@ -63,7 +63,7 @@ class CarTestReference extends Specification{
         given:
         FuelEfficiencyLogic fuelEfficiencyLogic = Mock()
         fuelEfficiencyLogic.getRange(_) >> 10
-        //fuelEfficiencyLogic.getRange(_) >> {int gas -> gas * 2 }
+        //fuelEfficiencyLogic.getRange(_) >> {float gas -> gas * 2 }
 
         Car car = new Car(fuelEfficiencyLogic);
 
@@ -91,7 +91,7 @@ class CarTestReference extends Specification{
         2 * fuelEfficiencyLogic.getRange(_)
 
         with(fuelEfficiencyLogic) {
-            requests == 2
+            rangeRequestsCount == 2
         }
     }
 

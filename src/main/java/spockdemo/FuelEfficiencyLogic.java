@@ -2,17 +2,21 @@ package spockdemo;
 
 public class FuelEfficiencyLogic {
 
-    private int requests;
+    private float gasToRangeRatio = 1;
+    private int rangeRequestsCount;
 
-    public int getRequests() {
-        return requests;
+    public float getGasConsumed(float distance) {
+        return distance / gasToRangeRatio;
     }
 
     // returns the distance that can be driven given a specified amount of gas
-    public int getRange(int gas) {
-        requests++;
+    public float getRange(int gas) {
+        rangeRequestsCount++;
+        return gas * gasToRangeRatio;
+    }
 
-        // one unit of gas returns one unit of distance
-        return gas;
+
+    public int getRangeRequestsCount() {
+        return rangeRequestsCount;
     }
 }

@@ -14,20 +14,6 @@ public class Car {
         this(new FuelEfficiencyLogic());
     }
 
-    // Drives the car up to the distance specified, depending on how much fuel is remaining.
-    // Returns true if we had enough gas to drive the full distance specified,
-    // or false if there wasn't enough gas to drive the full distance.
-    public boolean drive(int requestedDistance) {
-
-        int distanceAllowed = fuelEfficiencyLogic.getRange(gasRemaining);
-
-        int distanceDriven = (requestedDistance <= distanceAllowed) ? requestedDistance : distanceAllowed;
-
-        totalDistanceDriven += distanceDriven;
-        gasRemaining -= distanceDriven;
-        return (distanceDriven == requestedDistance);
-    }
-
     public void addGas(int gasAmount) {
         gasRemaining += gasAmount;
     }
@@ -38,5 +24,26 @@ public class Car {
 
     public int getTotalDistanceDriven() {
         return totalDistanceDriven;
+    }
+
+    // Drives the car up to the distance specified, depending on how much fuel is remaining.
+    // Returns true if we had enough gas to drive the full distance specified,
+    // or false if there wasn't enough gas to drive the full distance.
+    public boolean drive(int requestedDistance) {
+
+        float maxDistance = fuelEfficiencyLogic.getRange(gasRemaining);
+
+        float distanceDriven = 0;
+
+        if (requestedDistance <= maxDistance) {
+            distanceDriven = requestedDistance;
+        } else {
+            distanceDriven = maxDistance;
+        }
+
+        totalDistanceDriven += distanceDriven;
+        gasRemaining -= fuelEfficiencyLogic.getGasConsumed(distanceDriven);
+
+        return (distanceDriven == requestedDistance);
     }
 }
