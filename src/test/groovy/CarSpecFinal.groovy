@@ -1,10 +1,7 @@
-import spock.lang.Specification
-import spock.lang.Subject
-import spock.lang.Unroll
-import spockdemo.Car
-import spockdemo.FuelEfficiencyLogic
+import spock.lang.*
+import spockdemo.*
 
-class CarTestFinal extends Specification{
+class CarSpecFinal extends Specification{
 
     def "The car can be filled with gas"() {
         given: "a car"
@@ -36,7 +33,7 @@ class CarTestFinal extends Specification{
     }
 
     // Where (with unroll)
-    //@Unroll
+    @Unroll
     def "The car correctly reports the amount driven when it is driven #distance with #gas gas"(){
         given:
         Car car = new Car();
@@ -59,28 +56,29 @@ class CarTestFinal extends Specification{
     }
 
     // Mock
-    def "When fuel efficiency logic is different"() {
+    def "When driver won't drive"() {
         given:
-        FuelEfficiencyLogic fuelEfficiencyLogic = Mock()
-        fuelEfficiencyLogic.getRange(_) >> 10
-        //fuelEfficiencyLogic.getRange(_) >> {float gas -> gas * 2 }
+        Driver driver = Mock()
+        driver.isWillingToDrive(_) >> false
 
-        Car car = new Car(fuelEfficiencyLogic);
+        //driver.isWillingToDrive(_) >> {int distance -> distance > 2 }
+
+        Car car = new Car(driver);
 
         when:
-        car.addGas(5)
+        car.addGas(15)
         car.drive(10)
 
         then:
-        car.getTotalDistanceDriven() == 10
+        car.getTotalDistanceDriven() == 0
     }
 
 
     // interactions
-    def "Number of requests to fuelEfficiencyLogic incremented after driving"() {
+    def "Number of requests to isWillingToDrive incremented after driving"() {
         given:
-        FuelEfficiencyLogic fuelEfficiencyLogic = Spy();
-        Car car = new Car(fuelEfficiencyLogic)
+        Driver driver = Spy();
+        Car car = new Car(driver)
 
         when:
         car.addGas(5)
@@ -88,11 +86,9 @@ class CarTestFinal extends Specification{
         car.drive(1)
 
         then:
-        2 * fuelEfficiencyLogic.getRange(_)
+        2 * driver.isWillingToDrive(_)
 
-        with(fuelEfficiencyLogic) {
-            rangeRequestsCount == 2
-        }
+        driver.distanceDriven == 2
     }
 
     // expect
@@ -115,11 +111,11 @@ class CarTestFinal extends Specification{
     // exception
     def "expect exception to be thrown"() {
         given:
-        FuelEfficiencyLogic fuelEfficiencyLogic = Mock()
-        Car car = new Car(fuelEfficiencyLogic)
+        Driver driver = Mock()
+        Car car = new Car(driver)
 
         when:
-        fuelEfficiencyLogic.getRange(_) >> { throw new InternalError("ouch") }
+        driver.isWillingToDrive(_) >> { throw new InternalError("ouch") }
         car.drive(1)
 
         then:

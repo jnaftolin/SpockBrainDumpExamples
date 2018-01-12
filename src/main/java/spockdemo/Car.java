@@ -2,17 +2,24 @@ package spockdemo;
 
 public class Car {
 
-    private int totalDistanceDriven = 0;
-    private int gasRemaining = 0;
-    private FuelEfficiencyLogic fuelEfficiencyLogic;
+    //
+    // Constructors
+    //
 
-    public Car(FuelEfficiencyLogic fuelEfficiencyLogic) {
-        this.fuelEfficiencyLogic = fuelEfficiencyLogic;
+    public Car(Driver driver) {
+
+        this.driver = driver;
     }
 
     public Car() {
-        this(new FuelEfficiencyLogic());
+
+        this(new Driver());
     }
+
+
+    //
+    // Methods
+    //
 
     public void addGas(int gasAmount) {
         gasRemaining += gasAmount;
@@ -26,24 +33,36 @@ public class Car {
         return totalDistanceDriven;
     }
 
-    // Drives the car up to the distance specified, depending on how much fuel is remaining.
-    // Returns true if we had enough gas to drive the full distance specified,
-    // or false if there wasn't enough gas to drive the full distance.
+
+    // Attemps to drive the car the distance specified.
+    // If the driver is unwilling to drill the amount requested, the car won't move.
+    // Otherwise,
+    //  If there's enough gas, it will go the requested amount.
+    //  If there's not enough gas, it will go as far as it can.
+    // Returns true if the car moved the requested amount, false otherwise.
     public boolean drive(int requestedDistance) {
 
-        float maxDistance = fuelEfficiencyLogic.getRange(gasRemaining);
-
-        float distanceDriven = 0;
-
-        if (requestedDistance <= maxDistance) {
-            distanceDriven = requestedDistance;
-        } else {
-            distanceDriven = maxDistance;
+        if (!driver.isWillingToDrive(requestedDistance)) {
+            return false;
         }
 
-        totalDistanceDriven += distanceDriven;
-        gasRemaining -= fuelEfficiencyLogic.getGasConsumed(distanceDriven);
+        // assume 1 unit of gas provides 1 unit of distance
+        int distanceToDrive = Math.min(requestedDistance, gasRemaining);
 
-        return (distanceDriven == requestedDistance);
+        // update state
+        driver.incrementDistanceDriven(distanceToDrive);
+        totalDistanceDriven += distanceToDrive;
+        gasRemaining -= distanceToDrive;
+
+        // return true if we were able to drive the requested distance
+        return (distanceToDrive == requestedDistance);
     }
+
+    //
+    // Member variables
+    //
+
+    private int totalDistanceDriven = 0;
+    private int gasRemaining = 0;
+    private Driver driver;
 }
