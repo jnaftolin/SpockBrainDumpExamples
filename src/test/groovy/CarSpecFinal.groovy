@@ -5,7 +5,7 @@ class CarSpecFinal extends Specification{
 
     def "The car can be filled with gas"() {
         given: "a car"
-        Car car = new Car();
+        Car car = new Car()
 
         when: "we add gas"
         car.addGas(5)
@@ -22,7 +22,7 @@ class CarSpecFinal extends Specification{
 
     def "The car can't be driven more than the amount of gas in the car"() {
         given:
-        Car car = new Car();
+        Car car = new Car()
         car.addGas(5)
 
         when:
@@ -36,7 +36,7 @@ class CarSpecFinal extends Specification{
     @Unroll
     def "The car correctly reports the amount driven when it is driven #distance with #gas gas"(){
         given:
-        Car car = new Car();
+        Car car = new Car()
         car.addGas(gas)
 
         when:
@@ -63,7 +63,7 @@ class CarSpecFinal extends Specification{
 
         //driver.isWillingToDrive(_) >> {int distance -> distance > 2 }
 
-        Car car = new Car(driver);
+        Car car = new Car(driver)
 
         when:
         car.addGas(15)
@@ -77,7 +77,7 @@ class CarSpecFinal extends Specification{
     // interactions
     def "Number of requests to isWillingToDrive incremented after driving"() {
         given:
-        Driver driver = Spy();
+        Driver driver = Spy()
         Car car = new Car(driver)
 
         when:

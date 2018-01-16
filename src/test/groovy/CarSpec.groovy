@@ -4,26 +4,51 @@ import spockdemo.*
 class CarSpec extends Specification{
 
     // 1. Basic test
+    def "The car accepts gas"() {
+        given:
+        def car = new Car()
 
+        when:
+        car.addGas(5)
 
+        then:
+        car.gasRemaining == 5
 
+        when:
+        car.addGas(6)
 
-
+        then:
+        car.gasRemaining(11)
+    }
 
 
     // 2. Data driven
-    def "The car can't be driven more than the amount of gas in the car"() {
+    @Unroll
+    def "The car can't be driven more than #distance with #gas of gas in the car"() {
         given:
-        Car car = new Car();
-        car.addGas(5)
+        Car car = new Car()
+        car.addGas(gas)
 
         when:
-        car.drive(10)
+        car.drive(distance)
 
         then:
-        car.getTotalDistanceDriven() == 5
+        car.getTotalDistanceDriven() == expectedDistance
+
+        where:
+        gas |   distance    |   expectedDistance
+        5   |   5           |   5
+        10  |   5           |   5
+        5   |   10          |   5
+
+
     }
 
+    // test when:
+    // gas=5, distance=5, expectedDistance=5
+    // gas=5, distance=10, expectedDistance=5
+    // gas = 10, distance=5, expectedDistance=5
+    // gas = 0, distance=1, expectedDistance=0
 
 
 
@@ -32,14 +57,14 @@ class CarSpec extends Specification{
     def "When driver won't drive"() {
         given:
         Driver driver = Mock()
-        driver.isWillingToDrive(_) >> false
+        driver.isWillingToDrive(10) >> false
+        driver.isWillingToDrive(9) >> true
 
-        //driver.isWillingToDrive(_) >> {int distance -> distance > 2 }
-
-        Car car = new Car(driver);
+        @Subject
+        Car car = new Car(driver)
 
         when:
-        car.addGas(15)
+        car.addGas(10)
         car.drive(10)
 
         then:
@@ -50,7 +75,7 @@ class CarSpec extends Specification{
     // interactions
     def "Number of requests to isWillingToDrive incremented after driving"() {
         given:
-        Driver driver = Spy();
+        Driver driver = Spy()
         Car car = new Car(driver)
 
         when:
@@ -59,7 +84,8 @@ class CarSpec extends Specification{
         car.drive(1)
 
         then:
-        2 * driver.isWillingToDrive(_)
+        1 * driver.isWillingToDrive(1)
+        1 * driver.isWillingToDrive(1)
 
         driver.distanceDriven == 2
     }
@@ -70,6 +96,7 @@ class CarSpec extends Specification{
         given:
         Car car = new Car()
         car.addGas(gas)
+
 
         expect:
         didDriveFullAmount == car.drive(distance)
@@ -108,14 +135,18 @@ class CarSpec extends Specification{
         car.drive(distance)
 
         then:
+        car.totalDistanceDriven == expectedTotalDistance
+        car.gasRemaining == expectedGasRemaining
+
         with(car) {
             totalDistanceDriven == expectedTotalDistance
             gasRemaining == expectedGasRemaining
         }
 
+
         where:
         gas  | distance || expectedTotalDistance | expectedGasRemaining
         5    |  3       ||   3                   |  2
-        5    | 10       ||   5                   | 0
+        5    | 10       ||   5                   |  0
     }
 }

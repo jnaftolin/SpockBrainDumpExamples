@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c783a6e-fdf4-45c2-87c0-3d893b5bdc58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/spockdemo/Driver.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/spockdemo/FuelEfficiencyLogic.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/groovy/CarTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/CarSpec.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/groovy/CarTestFinal.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spockdemo/Car.java" afterPath="$PROJECT_DIR$/src/main/java/spockdemo/Car.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/CarSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/CarSpec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -68,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CarSpec.groovy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CarSpec.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="241">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -83,8 +78,8 @@
       <file leaf-file-name="CarSpecFinal.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="-16">
+              <caret line="78" column="14" lean-forward="false" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -92,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Main.java">
+      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-7">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,26 +100,9 @@
       <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Car.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+            <state relative-caret-position="-7">
+              <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,6 +126,7 @@
       <find>int</find>
       <find>getrange</find>
       <find>fuel</find>
+      <find>;</find>
     </findStrings>
     <replaceStrings>
       <replace>gas</replace>
@@ -349,7 +328,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4527336365000" />
+        <entry key="$PROJECT_DIR$" value="3021544668000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3223182317" />
       </map>
     </option>
@@ -471,11 +450,11 @@
         <option value="$PROJECT_DIR$/src/test/groovy/CarTest.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/spockdemo/FuelEfficiencyLogic.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/CarTest2.groovy" />
-        <option value="$PROJECT_DIR$/src/test/groovy/CarSpec2.groovy" />
-        <option value="$PROJECT_DIR$/src/test/groovy/CarSpec.groovy" />
-        <option value="$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy" />
         <option value="$PROJECT_DIR$/src/main/java/spockdemo/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/spockdemo/Driver.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/CarSpec2.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/CarSpec.groovy" />
       </list>
     </option>
   </component>
@@ -485,10 +464,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="832" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -817,8 +796,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -869,17 +848,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.sprinter/zillow/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="flogic&#9;FILE&#9;file:///Users/jordannaftolin/github/SpockBrainDumpExamples/src/main/java/spockdemo/FuelEfficiencyLogic.java&#10;fel&#9;FILE&#9;file:///Users/jordannaftolin/github/SpockBrainDumpExamples/src/main/java/spockdemo/FuelEfficiencyLogic.java&#10;ctref&#9;FILE&#9;file:///Users/jordannaftolin/stash/test/SpockDemo/src/test/groovy/CarTestReference.groovy" />
+    <property name="SearchEverywhereHistoryKey" value="s.g&#9;FILE&#9;file:///Users/jordannaftolin/github/SpockBrainDumpExamples/settings.gradle&#10;b.gradle&#9;FILE&#9;file:///Users/jordannaftolin/github/SpockBrainDumpExamples/build.gradle&#10;flogic&#9;FILE&#9;file:///Users/jordannaftolin/github/SpockBrainDumpExamples/src/main/java/spockdemo/FuelEfficiencyLogic.java&#10;fel&#9;FILE&#9;file:///Users/jordannaftolin/github/SpockBrainDumpExamples/src/main/java/spockdemo/FuelEfficiencyLogic.java&#10;ctref&#9;FILE&#9;file:///Users/jordannaftolin/stash/test/SpockDemo/src/test/groovy/CarTestReference.groovy" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -902,35 +881,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CarSpecFinal">
-    <configuration name="CarSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CarSpec.Number of requests to isWillingToDrive incremented after driving">
+    <configuration name="CarSpec.Number of requests to isWillingToDrive incremented after driving" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SpockDemo_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CarSpec" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="CarSpec2.Number of requests to fuelEfficiencyLogic incremented after driving" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="SpockDemo_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarSpec2" />
-      <option name="METHOD_NAME" value="Number of requests to fuelEfficiencyLogic incremented after driving" />
+      <option name="METHOD_NAME" value="Number of requests to isWillingToDrive incremented after driving" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -943,15 +902,15 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CarSpecFinal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarSpec.The car accepts gas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SpockDemo_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarSpecFinal" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="CarSpec" />
+      <option name="METHOD_NAME" value="The car accepts gas" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -963,13 +922,33 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CarSpecFinal.The car can't be driven more than the amount of gas in the car" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarSpec.The car can't be driven more than #distance with #gas of gas in the car" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SpockDemo_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarSpecFinal" />
+      <option name="MAIN_CLASS_NAME" value="CarSpec" />
+      <option name="METHOD_NAME" value="The car can't be driven more than #distance with #gas of gas in the car" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CarSpec.The car can't be driven more than the amount of gas in the car" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SpockDemo_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CarSpec" />
       <option name="METHOD_NAME" value="The car can't be driven more than the amount of gas in the car" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -983,13 +962,13 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CarSpecFinal.When driver won't drive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarSpec.When driver won't drive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SpockDemo_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarSpecFinal" />
+      <option name="MAIN_CLASS_NAME" value="CarSpec" />
       <option name="METHOD_NAME" value="When driver won't drive" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1085,19 +1064,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CarSpec2.Number of requests to fuelEfficiencyLogic incremented after driving" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CarSpecFinal.When driver won't drive" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CarSpecFinal" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CarSpecFinal.The car can't be driven more than the amount of gas in the car" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CarSpec" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CarSpec.The car can't be driven more than the amount of gas in the car" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CarSpec.The car accepts gas" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CarSpec.The car can't be driven more than #distance with #gas of gas in the car" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CarSpec.When driver won't drive" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CarSpec.Number of requests to isWillingToDrive incremented after driving" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CarSpecFinal" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CarSpec" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CarSpecFinal.The car can't be driven more than the amount of gas in the car" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CarSpecFinal.When driver won't drive" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CarSpec2.Number of requests to fuelEfficiencyLogic incremented after driving" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CarSpec.Number of requests to isWillingToDrive incremented after driving" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CarSpec.When driver won't drive" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CarSpec.The car can't be driven more than #distance with #gas of gas in the car" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CarSpec.The car can't be driven more than the amount of gas in the car" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CarSpec.The car accepts gas" />
       </list>
     </recent_temporary>
   </component>
@@ -1121,79 +1100,80 @@
       <workItem from="1515660811553" duration="71000" />
       <workItem from="1515660895459" duration="117000" />
       <workItem from="1515661024265" duration="3277000" />
-      <workItem from="1515692227383" duration="9566000" />
+      <workItem from="1515692227383" duration="9630000" />
+      <workItem from="1515742030150" duration="13017000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CarSpec - 2018.01.11 at 23h 21m 54s.xml">
-      <configuration name="CarSpec" configurationId="JUnit" />
+    <history-entry file="CarSpec_Number_of_requests_to_isWillingToDrive_incremented_after_driving - 2018.01.16 at 14h 47m 44s.xml">
+      <configuration name="CarSpec.Number of requests to isWillingToDrive incremented after driving" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal - 2018.01.11 at 23h 14m 26s.xml">
-      <configuration name="CarSpecFinal" configurationId="JUnit" />
+    <history-entry file="CarSpec_Number_of_requests_to_isWillingToDrive_incremented_after_driving - 2018.01.16 at 14h 48m 14s.xml">
+      <configuration name="CarSpec.Number of requests to isWillingToDrive incremented after driving" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal - 2018.01.11 at 23h 16m 35s.xml">
-      <configuration name="CarSpecFinal" configurationId="JUnit" />
+    <history-entry file="CarSpec_The_car_can't_be_driven_more_than_#distance_with_#gas_of_gas_in_the_car - 2018.01.16 at 14h 43m 57s.xml">
+      <configuration name="CarSpec.The car can't be driven more than #distance with #gas of gas in the car" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal - 2018.01.11 at 23h 19m 35s.xml">
-      <configuration name="CarSpecFinal" configurationId="JUnit" />
+    <history-entry file="CarSpec_The_car_can't_be_driven_more_than_the_amount_of_gas_in_the_car - 2018.01.16 at 14h 41m 47s.xml">
+      <configuration name="CarSpec.The car can't be driven more than the amount of gas in the car" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal - 2018.01.11 at 23h 22m 01s.xml">
-      <configuration name="CarSpecFinal" configurationId="JUnit" />
+    <history-entry file="CarSpec_The_car_can't_be_driven_more_than_the_amount_of_gas_in_the_car - 2018.01.16 at 14h 42m 21s.xml">
+      <configuration name="CarSpec.The car can't be driven more than the amount of gas in the car" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal_The_car_can't_be_driven_more_than_the_amount_of_gas_in_the_car - 2018.01.11 at 23h 15m 14s.xml">
-      <configuration name="CarSpecFinal.The car can't be driven more than the amount of gas in the car" configurationId="JUnit" />
+    <history-entry file="CarSpec_The_car_can't_be_driven_more_than_the_amount_of_gas_in_the_car - 2018.01.16 at 14h 42m 31s.xml">
+      <configuration name="CarSpec.The car can't be driven more than the amount of gas in the car" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal_The_car_can't_be_driven_more_than_the_amount_of_gas_in_the_car - 2018.01.11 at 23h 15m 56s.xml">
-      <configuration name="CarSpecFinal.The car can't be driven more than the amount of gas in the car" configurationId="JUnit" />
+    <history-entry file="CarSpec_When_driver_won't_drive - 2018.01.16 at 14h 45m 32s.xml">
+      <configuration name="CarSpec.When driver won't drive" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal_The_car_can't_be_driven_more_than_the_amount_of_gas_in_the_car - 2018.01.11 at 23h 18m 53s.xml">
-      <configuration name="CarSpecFinal.The car can't be driven more than the amount of gas in the car" configurationId="JUnit" />
+    <history-entry file="CarSpec_When_driver_won't_drive - 2018.01.16 at 14h 45m 53s.xml">
+      <configuration name="CarSpec.When driver won't drive" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal_When_driver_won't_drive - 2018.01.11 at 23h 13m 43s.xml">
-      <configuration name="CarSpecFinal.When driver won't drive" configurationId="JUnit" />
+    <history-entry file="CarSpec_When_driver_won't_drive - 2018.01.16 at 14h 46m 31s.xml">
+      <configuration name="CarSpec.When driver won't drive" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CarSpecFinal_When_driver_won't_drive - 2018.01.11 at 23h 14m 21s.xml">
-      <configuration name="CarSpecFinal.When driver won't drive" configurationId="JUnit" />
+    <history-entry file="CarSpec_When_driver_won't_drive - 2018.01.16 at 14h 46m 45s.xml">
+      <configuration name="CarSpec.When driver won't drive" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35977000" />
+    <option name="totallyTimeSpent" value="49058000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="832" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="832" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915967" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32581738" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33053222" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913166" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3040057" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913166" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1247,6 +1227,50 @@
     </option>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1309,13 +1333,6 @@
         <state relative-caret-position="300">
           <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1495,13 +1512,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/FuelEfficiencyLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/FuelEfficiencyLogic.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1564,10 +1575,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Queue.java" />
     <entry file="file://$PROJECT_DIR$/src/test/groovy/QueueTest.groovy" />
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpec2.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/FuelEfficiencyLogic.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1580,61 +1592,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/FuelEfficiencyLogic.java">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpec2.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="-7">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+        <state relative-caret-position="-7">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spockdemo/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="-7">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpecFinal.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="78" column="14" lean-forward="false" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
           <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/CarSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
